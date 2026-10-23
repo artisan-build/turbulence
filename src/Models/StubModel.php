@@ -17,9 +17,6 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|StubModel newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|StubModel newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|StubModel query()
- *
- * @mixin \Eloquent
- * @mixin IdeHelperStubModel
  */
 class StubModel extends Model
 {

@@ -16,9 +16,6 @@ use Override;
  * @method static Builder<static>|Stub newModelQuery()
  * @method static Builder<static>|Stub newQuery()
  * @method static Builder<static>|Stub query()
- *
- * @mixin \Eloquent
- * @mixin IdeHelperStub
  */
 class Stub extends OrganizationalUnit
 {

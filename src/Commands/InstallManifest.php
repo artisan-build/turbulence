@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace ArtisanBuild\Turbulence\Commands;
 
-use App\Models\User;
 use ArtisanBuild\Turbulence\Models\Account;
 use ArtisanBuild\Turbulence\Models\UserModel;
 use Illuminate\Support\Collection;
@@ -20,7 +19,7 @@ class InstallManifest
                     'destination' => config_path('turbulence.php'),
                     'rector' => [],
                     'replace' => [
-                        UserModel::class => User::class,
+                        UserModel::class => 'App\\Models\\User',
                         Account::class => '\App\Models\Account',
                         "'installed' => false" => "'installed' => true",
                     ],

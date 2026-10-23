@@ -27,7 +27,7 @@ library with no application shell.
 ## CI
 
 - workflow: `.github/workflows/tests.yml`
-- the test matrix covers the PHP floor through PHP 8.5 and Laravel 11 through Laravel 13
+- the test matrix covers the PHP floor through PHP 8.5 and Laravel 12 through Laravel 13
 - the coverage job runs after every test-matrix lane passes
 
 ## Dependency install

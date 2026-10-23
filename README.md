@@ -25,8 +25,8 @@ Turbulence provides a flexible scaffolding system for building multi-account org
 ## Requirements
 
 - PHP 8.3+
-- Laravel 11.36+ or Laravel 12+
-- Verbs package (dev-main)
+- Laravel 11.36, 12, or 13
+- Verbs 0.9
 
 ## Installation
 
@@ -44,7 +44,7 @@ Turbulence includes an automated installer that sets up your application:
 php artisan turbulence:install
 ```
 
-The installer will:
+The installer performs the following setup.
 
 1. Install Rector (if not already installed)
 2. Publish the configuration file
@@ -67,7 +67,7 @@ After installation, run the migrations to create the necessary database tables:
 php artisan migrate
 ```
 
-This creates:
+The migration creates the following tables.
 
 - `profiles` table - User profile information
 - `organizational_units` table - Flexible organizational structure

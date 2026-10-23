@@ -4,13 +4,14 @@
 	"type": "library",
 	"license": "MIT",
 	"require": {
+        "php": "^8.3",
         "illuminate/support": "^11.36|^12.0|^13.0",
         "hirethunk/verbs": "dev-main",
         "spatie/php-structure-discoverer": "^2.3"
     },
     "require-dev": {
         "larastan/larastan": "^v3.0.2",
-        "orchestra/testbench": "^v9.9.0",
+        "orchestra/testbench": "^9.18|^10.11|^11.1",
         "pestphp/pest": "^v3.7.1",
         "laravel/pint": "^1.19.0",
         "phpstan/phpstan": "^2.1.0"

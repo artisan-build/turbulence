@@ -7,6 +7,7 @@
         "php": "^8.3",
         "illuminate/support": "^11.36|^12.0|^13.0",
         "hirethunk/verbs": "^0.9.0",
+        "phpdocumentor/reflection-docblock": "^6.0",
         "spatie/php-structure-discoverer": "^2.3"
     },
     "require-dev": {

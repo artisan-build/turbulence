@@ -50,6 +50,15 @@ jobs:
       - name: Execute tests
         run: composer ready
 
+      - name: Verify production-only install
+        if: matrix.php == '8.5'
+        run: |
+          scratch="$(mktemp -d)"
+          composer create-project laravel/laravel:^13.0 "$scratch" --no-dev --no-interaction --no-progress
+          composer --working-dir="$scratch" config repositories.turbulence path "$GITHUB_WORKSPACE"
+          composer --working-dir="$scratch" require artisan-build/turbulence:@dev --update-no-dev --with-all-dependencies --no-interaction --no-progress
+          php tests/no-dev-smoke.php "$scratch"
+
   coverage:
     needs: test
     runs-on: ubuntu-latest

@@ -5,12 +5,13 @@ declare(strict_types=1);
 namespace ArtisanBuild\Turbulence\Models;
 
 use ArtisanBuild\Turbulence\Traits\HasStubs;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 
 /**
  * @internal
  *
- * @property-read \Illuminate\Database\Eloquent\Collection<int, Stub> $stubs
+ * @property-read Collection<int, Stub> $stubs
  * @property-read int|null $stubs_count
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|StubModel newModelQuery()
